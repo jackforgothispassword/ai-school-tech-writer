@@ -38,7 +38,7 @@ def call_openai(prompt):
 
     try:
         messages = [
-            {"role": "system", "content": "You are an AI trained to help with updating README files based on commit messages and code files"}
+            {"role": "system", "content": "You are an AI trained to help with updating README files based on commit messages and code files"},
             {"role": "user", "content": prompt}
         ]
 
