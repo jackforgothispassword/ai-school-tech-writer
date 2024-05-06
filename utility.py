@@ -16,7 +16,7 @@ def format_data_for_openai(diffs, readme_content, commit_messages):
     commit_messages = '\n'.join(commit_messages) + '\n\n'
 
     # Decode the README content
-    readme_content = base64.b64decode(readme_contents).decode('utf-8')
+    readme_content = base64.b64decode(readme_content.content).decode('utf-8')
 
     # Construct the prompt with clear instructions for the LLM.
     prompt = (
@@ -51,6 +51,7 @@ def call_openai(prompt):
         print(f'Error making LLM call: {e}')
 
 def update_readme_and_create_pr(repo, updated_readme, readme_sha):
+    # Commit info
     commit_message = "AI COMMIT: Proposed README update based on recent code changes."
 
     commit_sha = os.getenv('COMMIT_SHA')
@@ -60,6 +61,7 @@ def update_readme_and_create_pr(repo, updated_readme, readme_sha):
 
     repo.update_file("README.md", commit_message, updated_readme, readme_sha, branch=new_branch_name)
 
+    # PR info
     pr_title = "AI PR: Update README based on recent change"
     pr_body = "This is an AI PR. Please review the README."
     pull_request = repo.create_pull(title=pr_title, body=pr_body, head=new_branch_name, base="main")
