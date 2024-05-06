@@ -36,11 +36,11 @@ def format_data_for_openai(diffs, readme_content, commit_messages):
 def call_openai(prompt):
 
     # Specify the API keys and type
-    client = ChatOpenAI(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-3.5-turbo-0125')
+    client = ChatOpenAI(api_key=os.getenv('OPENAI_API_KEY'), model='gpt-4-turbo')
 
     try:
         messages = [
-            {"role": "system", "content": "You are an AI trained to help with updating README files based on commit messages and code files. You do not HAVE to update the README if the code and commit messages do not warrent a change, but at the least please note what has been done for each commit in the README."},
+            {"role": "system", "content": "You are an AI trained to help with updating README files based on commit messages and code files."},
             {"role": "user", "content": prompt}
         ]
 
