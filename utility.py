@@ -42,7 +42,7 @@ def call_openai(prompt):
             {"role": "user", "content": prompt}
         ]
 
-        response = client.invoke(input=messsages)
+        response = client.invoke(input=messages)
         parser = StrOutputParser() 
         content = parser.invoke(input=response) 
 
