@@ -40,7 +40,7 @@ def call_openai(prompt):
 
     try:
         messages = [
-            {"role": "system", "content": "You are an AI trained to help with updating README files based on commit messages and code files"},
+            {"role": "system", "content": "You are an AI trained to help with updating README files based on commit messages and code files. You do not HAVE to update the README if the code and commit messages do not warrent a change, but at the least please note what has been done for each commit in the README."},
             {"role": "user", "content": prompt}
         ]
 
