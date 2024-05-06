@@ -1,7 +1,7 @@
 # AI for Developer Productivity: Technical Writer Agent
 
 ## Overview
-In this project, we developed a **Technical Writer Agent** to enhance developer productivity. The core functionality of our agent leverages Retrieval-Augmented Generation (RAG) to dynamically update and refine technical documentation. This innovative approach not only streamlines the documentation process but also ensures that it remains accurate, up-to-date, and contextually relevant. Recently, we have upgraded our AI model to **GPT-4 Turbo** to enhance the efficiency and quality of generated content, ensuring our system stays at the cutting edge of technology.
+In this project, we developed a **Technical Writer Agent** to enhance developer productivity. The core functionality of our agent leverages Retrieval-Augmented Generation (RAG) to dynamically update and refine technical documentation. This innovative approach not only streamlines the documentation process but also ensures that it remains accurate, up-to-date, and contextually relevant. Recently, we have upgraded our AI model to **GPT-4 Turbo** to enhance the efficiency and quality of generated content, ensuring our system stays at the cutting edge of technology. Furthermore, we have expanded the capabilities of our AI to include the generation and updating of cover images and technical diagrams, providing a comprehensive documentation toolset.
 
 ## Now It's Your Turn!
 Embrace your creativity and personalize this project to craft a solution that uniquely addresses the challenges and inefficiencies you face in your own environment. After seeing what our Technical Writer Agent can do, it’s time for you to take the reins. Use the foundation we’ve built and apply it to a challenge you face in your own professional or personal environment. Here’s how you can get started:
@@ -14,7 +14,8 @@ Embrace your creativity and personalize this project to craft a solution that un
 1. **Enhanced UI/UX:** Develop a more advanced and user-friendly interface that includes features such as real-time suggestions, auto-completion of content, and a more interactive documentation process.
 2. **Automated Content Updates:** Implement a feature where the agent periodically checks and updates existing documentation based on new information or changes in the relevant field, ensuring that all documentation remains current without manual intervention.
 3. **Integration with Existing Tools:** Develop integrations for the agent with commonly used development tools and platforms (e.g., Confluence, Jira, Notion) to streamline workflows and increase accessibility.
-4. **Add The Features You Want**: Let your creativity shine by adding a unique feature that significantly simplifies or enhances your daily routines. Innovate with functionalities that solve problems and improve efficiency or satisfaction in meaningful ways.
+4. **Cover Image and Technical Diagram Generation:** Utilize the enhanced capabilities of the AI to automatically generate and update cover images and technical diagrams, enriching the documentation with visually informative elements.
+5. **Add The Features You Want**: Let your creativity shine by adding a unique feature that significantly simplifies or enhances your daily routines. Innovate with functionalities that solve problems and improve efficiency or satisfaction in meaningful ways.
 
 ## Privacy and Submission Guidelines
 - **Submission Requirements:** Please submit a link to your public repo with your implementation or a loom video showcasing your work on the [BloomTech AI Platform](app.bloomtech.com). 
@@ -22,4 +23,4 @@ Embrace your creativity and personalize this project to craft a solution that un
 
 ---
 
-This update ensures that the README reflects the significant change in the AI model used in the project, aligning with the commit message's instruction to update this information in the documentation.
+This update to the README incorporates the recent enhancement in the AI’s capabilities to generate and update cover images and technical diagrams, reflecting the changes mentioned in the commit message and aligning with the project’s commitment to providing cutting-edge tools for developer productivity.
