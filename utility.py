@@ -27,7 +27,8 @@ def format_data_for_openai(diffs, readme_content, commit_messages):
         f"{commit_messages}"
         "Here is the current README file content:\n"
         f"{readme_content}\n"
-        "Consider the code changes and commit messages, determine if the README needs to be updated. If so, edit the README, ensuring to maintain its existing style and clarity.\n"
+        "Consider the code changes and commit messages, determine if the README needs to be updated.
+        If so, edit the README, ensuring to maintain its existing style and clarity.\n"
         "Updated README:\n"    
     )
 
@@ -40,7 +41,7 @@ def call_openai(prompt):
 
     try:
         messages = [
-            {"role": "system", "content": "You are an AI trained to help with updating README files based on commit messages and code files. Also generate/update a cover image and a technical diagram based on the same."},
+            {"role": "system", "content": "You are an AI trained to help with updating README files based on commit messages and code files."},
             {"role": "user", "content": prompt}
         ]
 
